@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="module" crossorigin src="./js/polyfills.DSTQX1KV.js"></script>
+
+    <meta charset="UTF-8" />
+
+    <link rel="icon" href="./favicon.ico" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta
+      http-equiv="cache-control"
+      content="private, max-age=0, no-cache, no-store, must-revalidate"
+    />
+    
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <title>IM</title>
+    <script>
+      function isIE() {
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      var sBrowser,
+        sUsrAg = navigator.userAgent;
+      var advice = "，建议使用谷歌浏览器获得最佳效果！";
+      if (isIE()) {
+        sBrowser = "Microsoft Internet Explorer";
+        alert("暂不支持该浏览器，请使用其它浏览器进行打开！");
+        // alert("当前浏览器为: " + sBrowser + advice);
+      }
+    </script>
+    <script>
+      // 安卓兼容低版本
+      this.globalThis || (this.globalThis = this);
+    </script>
+    <!-- <script src="./config.js"></script> -->
+    <script type="module" crossorigin src="./js/index.BfqZYlV2.js"></script>
+    <link rel="stylesheet" crossorigin href="./css/index.C8Gk-8V2.css">
+    <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="error"></div>
+    <div class="scriptPostion"></div>
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="./js/polyfills-legacy.BhpGfwUu.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="./js/index-legacy.D4XiLxx8.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+  <!-- <script>
+    const log = document.querySelector(".error");
+    log.addEventListener("click", function () {
+      log.style.display = "none";
+    });
+    window.addEventListener("error", function (event) {
+      console.log(event, "event");
+      // log.style.display = 'block';
+      log.innerHTML = `${log.textContent}${event.type}: ${event.message}\n`;
+      console.log(log.innerHTML, "log.innerHTML");
+      let xhr = new XMLHttpRequest();
+      // xhr.open('GET', 'http://log.hyhh2008.com?log=' +log.innerHTML);
+      // xhr.send();
+      // setTimeout(()=>{
+      //   log.style.display = 'none';
+      // },6000)
+    });
+  </script> -->
+  <style>
+    .error {
+      display: none;
+      font-size: 0.69333rem;
+      z-index: 9999;
+      position: fixed;
+      width: 100%;
+      height: 40%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</html>
